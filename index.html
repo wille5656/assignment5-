@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <body style="background-color:gray;"> 
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Assignment 5 </title>
+
+</head>
+<body>
+<select name = "colors" id= "color-select">
+  <option value= ""> Select a color </option>
+  <option class = "red" id="red" value="red">Red</option>
+  <option class = "blue" id="blue" value="blue">Blue</option>
+  <option class = "green" id="green" value="green">Green</option>
+  <option class = "yellow" id="yellow" value="yellow">Yellow</option>
+</select>
+
+<div id= "addRowButton" Onclick= "addRow()" >
+  <button> Add Row</button>
+</div>
+<div id= "removedRowButton" onClick= "removeRow()" >
+  <button> Remove Row</button>
+</div>
+<div id= "addColumnButton" onClick= "addColumn()" >
+  <button> Add Column</button>
+</div>
+<div id= "removeColumnButton" onClick= "removeColumn()" >
+  <button> Remove Column</button>
+</div>
+
+<div id= "colorAllUncoloredCellsButton" onClick= "colorAllUncoloredCells()" >
+  <button> Color All Uncolored Cells</button>
+</div>
+<div id= "colorAllCellsButton" onClick= "colorAllCells()" >
+  <button> Color All Cells</button>
+</div>
+<div id= "resetColorOfCellsButton" onClick= "resetColorOfCells()" >
+  <button> Reset Color of Cells</button>
+</div>
+<table id="table">
+<tr class="row">
+  <td onclick = "selectCell(this.id)"  id = 1 class="cell"> </td>
+  <td onclick = "selectCell(this.id)" id = 2 class="cell">  2</td>
+</tr>
+<tr class="row">
+  <td onclick = "selectCell(this.id)" id = 3 class="cell"> </td>
+  <td onclick = "selectCell(this.id)" id = 4 class="cell"> </td>
+</tr>
+
+
+</table>
+<script src="js/script.js"></script
+</html>
